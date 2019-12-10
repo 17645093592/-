@@ -1,0 +1,8 @@
+.ant-tabs-tab{
+    font-size: .36rem;
+    height: .8rem ;
+    line-height: .8rem ;
+}
+.ant-tabs>.ant-tabs-bar{
+    margin: 0;
+}
