@@ -1,14 +1,17 @@
 import React from "react"
 import {render} from "react-dom"
 import App from "./App"
-import {HashRouter  as Router,Route} from "react-router-dom"
+import {Provider} from "react-redux"
+import store from "./store/store"
+import {HashRouter  as Router} from "react-router-dom"
 import 'antd/dist/antd.css';
 render((
-
-  <Router>
-    <App/>
-    
-  </Router>
+<Provider store={store}>
+    <Router>
+      <App/>
+      
+    </Router>
+  </Provider>
   ),document.getElementById("root"))
   // <Route path="/home" render={( )=><App />}></Route>
     

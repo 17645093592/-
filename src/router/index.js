@@ -4,7 +4,8 @@ import {
     My,
     Shopping,
     Content,
-    xiangqing
+    xiangqing,
+    Seach
 } from "../pages"
 
 
@@ -49,6 +50,11 @@ export const maiRoutes = [
     {
         pathname:"/xiangqing",
         component:xiangqing,
+       
+    },
+    {
+        pathname:"/seach",
+        component:Seach,
        
     }
 ]

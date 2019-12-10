@@ -29,7 +29,7 @@ export default class Right extends Component {
                                                     <p className="txt_elli">演员：任达华,梁咏琪</p>
                                                 </dd>
                                             </dl>
-                                            <div className="btns">
+                                            <div className="btnsa">
                                                 <div className="m_btn_green">预告片</div>
                                             </div>
                                         </div>  
@@ -45,7 +45,55 @@ export default class Right extends Component {
                 <div className="commovie">
                     <h2 className="title"><b>即将上映</b><span>(48部)</span></h2>
                     <div className="commovielist">
-                        
+                        <time className="month">
+                            <span>9月</span>
+                        </time>
+                        <ul>
+                            <li>
+                                <time className="day"><span>20日</span></time>
+                                <div className="table movielist">
+                                    <div className="upmovie_pic">
+                                        <div><img className="m_img img_box" src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F08%2F20%2F184519.87782615_1280X720X2.jpg&width=130&height=195&clipType=4"></img></div>
+                                    </div>
+                                    <div className="upmovie_txt td">
+                                         <dl>
+                                                <dt>
+                                                    <div><b>小Q</b></div>
+                                                </dt>
+                                                <dd>
+                                                    <p><b className="color">293</b> 人想看 - 剧情</p>
+                                                    <p>导演：罗永昌</p>
+                                                </dd>
+                                            </dl>
+                                            <div className="btnsaa">
+                                                <div className="m_btn_green">预告片</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                            <time className="day"><span>20日</span></time>
+                            <div className="table movielist">
+                                <div className="upmovie_pic">
+                                    <div><img className="m_img img_box" src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F08%2F20%2F184519.87782615_1280X720X2.jpg&width=130&height=195&clipType=4"></img></div>
+                                </div>
+                                <div className="upmovie_txt td">
+                                     <dl>
+                                            <dt>
+                                                <div><b>小Q</b></div>
+                                            </dt>
+                                            <dd>
+                                                <p><b className="color">293</b> 人想看 - 剧情</p>
+                                                <p>导演：罗永昌</p>
+                                            </dd>
+                                        </dl>
+                                        <div className="btnsaa">
+                                            <div className="m_btn_green">预告片</div>
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
                     </div>
                 </div>
 

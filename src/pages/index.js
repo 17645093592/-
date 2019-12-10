@@ -4,6 +4,7 @@ import My from "./my"
 import Shopping from "./shopping"
 import Content from "./content"
 import xiangqing from "./xiangqing"
+import Seach from "./seach"
 
 export {
     Home,
@@ -11,5 +12,6 @@ export {
     My,
     Shopping,
     Content,
-    xiangqing
+    xiangqing,
+    Seach
 }

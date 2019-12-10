@@ -27,6 +27,6 @@ export default class soon extends Component {
         )
     }
     clickHandler(){
-        this.props.history.push("/content")
+        this.props.history.push("/xiangqing")
     }
 }

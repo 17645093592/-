@@ -1,13 +1,21 @@
+
 import React, { Component } from 'react'
 import Header from "./components/header"
-import {Route,Redirect} from "react-router-dom"
+import {Route,Redirect,withRouter} from "react-router-dom"
 import {maxRoutes,maiRoutes} from "./router"
-export default class App extends Component {
+ class App extends Component {
+  
     render() {
+    const {...history} = this.props
         return (
             <>
                 <div className="rootTwo">
-                <Header></Header>
+                
+                {
+                    (history.location.pathname === "/home" ||history.location.pathname === "/shopping" || history.location.pathname === "/purchase" ||history.location.pathname === "/my" ||history.location.pathname === "/content") ?<Header></Header>:null 
+                }
+                
+                
                     {
                             maxRoutes.map(router=>{
                                 return <Route key={router.pathname} path={router.pathname} component={router.component} />
@@ -26,3 +34,6 @@ export default class App extends Component {
         )
     }
 }
+
+export default withRouter(App)
+

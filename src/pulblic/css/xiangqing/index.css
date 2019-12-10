@@ -1,0 +1,342 @@
+.mobile_wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.mobile_wrap {
+    overflow-x: hidden;
+}
+
+.header {
+    height: 4.4em;
+    position: relative;
+    z-index: 2;
+    background:#1c2635 ;
+}
+.hea_film {
+    padding: 0 1.5em 0 1.4em;
+    height: 100%;
+}
+.h_movie {
+    background: 0;
+}
+.table_v_c {
+    height: 100%;
+    -webkit-box-align: center;
+    width: 100%;
+    display: -webkit-box;
+}
+.hea_film .filmtool {
+    text-align: right;
+}
+.filmtool {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-align: center;
+    align-items: center;
+    line-height: 4.4em;
+    flex-direction: row-reverse;
+}
+.hea_film .filmtool .i_h_collection {
+    margin-right: -1.5em;
+}
+.i_h_collection {
+    background:url(//static1.mtime.cn/html5/20191122140130/images/2014/i_h_collection.png) no-repeat center center;
+    background-size: .5rem auto;
+    align-items: center;
+
+}
+.i_h_share, .i_h_collection {
+    width: 5.3em;
+    height: 4.4em;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.i_h_share {
+    align-items: center;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/i_h_share.png) no-repeat center center;
+    background-size: auto .4rem;
+}
+.anticon svg {
+    display: inline-block;
+}
+.spans{
+    margin-right: .2rem;
+}
+.m_cinema {
+    margin-top: -4.4em;
+}
+.m_bg_cinema, .m_bg_cinema01 {
+    height: 14em;
+    background-color: #4c4c4c;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-image: url(//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F12%2F05%2F093123.64507840_1280X720X2.jpg&width=420&height=280&clipType=);
+}
+.m_bg_cinema .m_bg_img{
+    background-size: 100% auto;
+    height: 14em;
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-filter: blur(12px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-mask: -webkit-linear-gradient(270deg,#000 0,#000 14em,rgba(0,0,0,0) 14em);
+    background-image: url(//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F12%2F05%2F093123.64507840_1280X720X2.jpg&width=420&height=280&clipType=);
+}
+.m_bg_cinema p {
+    height: 14em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/cinemainfo_bg.png) no-repeat center bottom;
+    background-size: auto 4em;
+    position: relative;
+    z-index: 2;
+}
+.cinemabox {
+    margin-top: -9.1em;
+    padding: 0 0 0 1.5em;
+    z-index: 1;
+    position: relative;
+}
+.cinemabox .cinema_pic {
+    display: block;
+}
+.cinemabox .cinema_pic {
+    overflow: hidden;
+    background: #fff;
+    margin-right: 1em;
+    padding: .2em;
+    width: 10.9em;
+    height: 16em;
+}
+.cinema_pic {
+    position: relative;
+}
+.cinemabox .cinema_pic span {
+    width: 10.5em;
+    height: 15.6em;
+    display: block;
+}
+.m_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.cinema_pic .i_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.4em;
+    margin-top: -2.4em;
+}
+.i_video {
+    width: 4.7em;
+    height: 4.7em;
+    overflow: hidden;
+    display: inline-block;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/viceoplay.png) no-repeat center center;
+    background-size: cover;
+}
+.moviever {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+.cinema_pic .i_cine_05 {
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/iv_cine_05.png) no-repeat center center;
+    background-size: cover;
+}
+.cinema_pic .i_cine_04, .cinema_pic .i_cine_05, .cinema_pic .i_cine_14, .cinema_pic .i_cine_15 {
+    display: block;
+    margin-bottom: .5em;
+    width: 3.2em;
+    height: 2.2em;
+}
+.cinema_pic .i_cine_14 {
+    height: 2.8em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/iv_cine_14.png) no-repeat center center;
+    background-size: cover;
+}
+.cinema_pic .i_cine_15 {
+    height: 3.1em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/iv_cine_15.png) no-repeat center center;
+    background-size: cover;
+}
+.table_v {
+    box-orient: vertical;
+}
+.cinemabox .cinema_txt header {
+    color: #fff;
+    margin-top: .5em;
+    position: relative;
+    margin-bottom: 1.6em;
+    margin-right: 1.5rem;
+}
+.h22{
+    color: #fff;
+}
+.cinemabox .cinema_txt header b {
+    background: #659d0e;
+    display: block;
+    width: 2.8em;
+    height: 2.8em;
+    padding: 0;
+    text-align: center;
+    line-height: 2.8em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: 1.9em;
+}
+.cinemabox .cinema_txt header .m_score {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.m_score {
+    background: #659d0e;
+    width: 2em;
+    height: 1.8em;
+    color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.cinemabox .cinema_txt header .m_score i {
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.4em;
+}
+.cinemabox .cinema_txt li {
+    padding-bottom: .4em;
+    font-weight: bold;
+}
+.cinemabox .cinema_txt li p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.cinemabox .cinema_txt li p b {
+    color: #659d0e;
+    font-weight: normal;
+}
+.m_cin_btn {
+    margin-top: .55em;
+    width: auto;
+    display: block;
+}
+
+#wantButton{
+    border: 1px solid #ccc;
+    font-size: .3rem;
+    border-radius: .15rem;
+}
+.baidu_blue  {
+    margin-left: .2rem;
+    border: 1px solid #ccc;
+    font-size: .3rem;
+    border-radius: .15rem;
+}
+.cin_otherinfo {
+    padding: .8em 0 1.2em;
+}
+.cin_otherinfo li:first-child {
+    color: #fd8900;
+}
+.cin_otherinfo li {
+    text-align: center;
+}
+.i_dot {
+    width: 1.3em;
+    height: 1.2em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/i_dot.png) no-repeat;
+    background-size: cover;
+    margin: -0.4em .3em 0 0;
+}
+.i_block {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cin_otherinfo li b {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+.li2{
+    height: 4em;
+    margin: 1.45em 0px 1.1em;
+    display: none;
+}
+.baidu_button{
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    top: 292.797px;
+}
+.cin_otherinfo .m_btn_orange {
+    width: auto;
+    display: block;
+    padding: 1.15em 0;
+    margin: 1.45em 1.5em 1.1em;
+    border-radius: .4rem;
+}
+.m_btn_orange {
+    background: #ff8600;
+    color: #fff;
+    border: 1px solid #ff8600;
+}
+
+.cin_otherinfo .m_btn_orange span {
+    font-size: 1.6em;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.cin_line{
+
+}
+.cin_line p:first-child {
+    height: .5em;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 .2em .2em rgba(51,51,51,0.05);
+    position: relative;
+    z-index: 1;
+}
+.cin_line p:last-child {
+    height: 1.2em;
+    background: #f6f6f6;
+    position: relative;
+    z-index: 0;
+}
+.cin_more {
+    padding: 1.1em 1.5em 0;
+}
+.cin_more p {
+    font-size: 1.4em;
+    color: #333;
+    line-height: 1.5;
+    height: 3em;
+    overflow: hidden;
+}
+.m_btn_tmore {
+    display: block;
+    background: #fff url(//static1.mtime.cn/html5/20191122140130/images/2014/i-tmore.png) no-repeat center center;
+    background-size: auto .3rem;
+    height: 0.5rem;
+}

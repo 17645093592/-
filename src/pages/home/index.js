@@ -11,6 +11,7 @@ const { Search } = Input;
                 <div className="table_v_c" style={{display:"flex",alignItems: "center",height:"1.3rem",borderBottom:"1px solid #ccc"}}>
                     <div style={{marginLeft: ".3rem"}}><span>北京</span><Icon type="down" /></div>
                     <Search
+                    onClick={this.clickHnad.bind(this)}
                     placeholder="input search text"
                     onSearch={value => console.log(value)}
                     style={{ width: 220 ,marginLeft:30}}
@@ -26,7 +27,9 @@ const { Search } = Input;
             </div>
         )
     }
-   
+    clickHnad(){
+        this.props.history.push("/seach")
+    }
 }
 
 export default Home
