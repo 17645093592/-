@@ -1,0 +1,190 @@
+.ant-tabs-nav{width: 100%;}
+.ant-tabs-nav>div{width: 100%;display: flex;}
+.ant-tabs-tab-active{width: 50%;text-align: center;;}
+.ant-tabs-tab{width: 50%;text-align: center}
+.ant-tabs-bar{
+    margin: 0;
+}
+.thefilm .commovie, .thefilm {
+    padding-top: 0;
+}
+.thefilm {
+    padding: 1.2em 1.5em 1.5em 1.5em;
+}
+.commovie {
+    padding: 1.5em 0;
+}
+.commovie .commovielist ul {
+    margin-right: -1.5em;
+}
+.thefilm .commovie .commovielist li {
+    margin-left: 0;
+    padding-bottom: .85em;
+}
+.commovie .commovielist li {
+    position: relative;
+    padding: 0 0 1.4em 0;
+    margin-left: 3em;
+    border-bottom: 1px solid #d8d8d8;
+}
+.table{
+    width: 100%;
+    display: -webkit-box;
+    margin-top: .3rem;
+}
+.upmovie_pic {
+    width: 6.5em;
+    height: 9.8em;
+}
+.commovie .commovielist li .upmovie_pic {
+    position: relative;
+    width: 6.5em;
+}
+.movielist .upmovie_pic {
+    overflow: hidden;
+    margin-right: 1.5em;
+}
+.upmovie_pic div{
+    width: 6.5em;
+    height: 9.8em;
+    overflow: hidden;
+    display: block;
+}
+.i_hot {
+    background:url(//static1.mtime.cn/html5/20191122140130/images/2014/i_hot.png) no-repeat;
+    background-size: cover;
+}
+.i_hot {
+    width: 3.1em;
+    height: 3.1em;
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+.m_img{
+    width: 6.5em;
+    height: 9.8em;
+    display: block;
+}
+.movielist .upmovie_txt {
+    position: relative;
+}
+.commovie .commovielist li dl {
+    min-height: 6.7em;
+}
+.movielist .upmovie_txt dl {
+    padding-top: .05em;
+}
+.movielist .upmovie_txt dt {
+    margin-top: -0.2em;
+}
+.movielist .upmovie_txt dt b {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+.movielist .upmovie_txt dt .m_scorea {
+    margin-left: .5em;
+}
+.m_scorea {
+    background: #659d0e;
+    width: 2em;
+    height: 1.8em;
+    color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 1.8em;
+    text-align: center;
+    position: relative;
+}
+.m_scorea i {
+    font-size: 1.1em;
+}
+.commovie .commovielist li .upmovie_txt dd {
+    padding-top: .5em;
+}
+.movielist .upmovie_txt dd {
+    padding: 1em 0 0;
+}
+.movie_tip {
+    color: #659d0e;
+    margin: 0;
+}
+.movie_tip .i_dot {
+    width: 1.1em;
+    height: .8em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/i_dot_01.png) no-repeat 0 0;
+    background-size: cover;
+    margin: -0.5em .3em 0 0;
+}
+.i_block {
+    display: inline-block;
+    vertical-align: middle;
+}
+.movielist .upmovie_txt dd p.movie_tip span {
+    width: 15em;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.movielist .upmovie_txt dd p span {
+    font-size: 1.2em;
+    line-height: 1.65;
+}
+.thefilm .mtool {
+    overflow: hidden;
+    margin-top: .4em;
+}
+.thefilm .mtool .i_cine_05 {
+    width: 2em;
+    height: 1.5em;
+    background:url(//static1.mtime.cn/html5/20191122140130/images/2014/ia_cine_05.png) no-repeat 0 0;
+    background-size: cover;
+}
+.thefilm .mtool i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .2em;
+}
+.i_cine_15 {
+    width: 4.4em;
+    height: 1.5em;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/ia_cine_15.png) no-repeat;
+    background-size: cover;
+}
+.thefilm .commovie .commovielist li .btns b {
+    font-size: 1.2em;
+    color: #999;
+    font-weight: normal;
+    line-height: 2.9em;
+}
+.i_block {
+    display: inline-block;
+    vertical-align: middle;
+}
+.thefilm .commovie .commovielist li .btns b {
+    font-size: 1.2em;
+    color: #999;
+    font-weight: normal;
+    line-height: 1.9em;
+    margin-bottom: .2rem;
+}
+.thefilm .commovie .commovielist li .btns div {
+    margin-left: 1em;
+    min-width: 5.5em;
+    float: right;
+    border-radius: .55rem;
+    text-align: center;
+    font-size: .35rem;
+    margin-right: 7.5em;
+}
+.m_btn_orange {
+    background: #ff8600;
+    color: #fff;
+    border: 1px solid #ff8600;
+}

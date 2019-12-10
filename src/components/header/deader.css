@@ -1,0 +1,104 @@
+.purchasead {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #1e2837;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    position: relative;
+    padding: 0;
+}
+
+.td{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.purchasead .mclose a {
+    display: inline-block;
+    width: 2.5rem;
+    height: 5rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    text-decoration: none;
+}
+.mtimelink .mclose a {
+    background:url(//static1.mtime.cn/html5/20191122140130/images/2014/i_close_control.png) no-repeat center center;
+    background-size: 1.6em auto;
+    width: 3em;
+    height: 6em;
+    display: block;
+    text-indent: -9919px;
+    z-index: 5;
+}
+.purchasead .table_vh_c {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding-left: 3rem;
+}
+.purchasead a {
+    text-decoration: none;
+}
+.mlogo {
+    background:url("//static1.mtime.cn/html5/20191122140130/images/2014/share07.png") no-repeat center center;
+    background-size: 100% auto;
+    width: 1rem;
+    height: 1.5rem;
+    margin-top: 0;
+    margin-right: .75em;
+    overflow: hidden;
+    border-radius: 1em;
+}
+.purchasead .table_vh_c .td {
+    width: 18rem;
+    position: relative;
+}
+.purchasead .table_vh_c .td dt em {
+    color: #008ce3;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-style: normal;
+}
+.purchasead .table_vh_c .td em {
+    line-height: 1.5;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #a9dcff;
+}
+.purchasead .table_vh_c .td span {
+    background-color: #0087dc;
+    width: 6.5rem;
+    height: 2.5rem;
+    color: #fff;
+    border: 1px solid #0075c4;
+    right: 1rem;
+}
+.purchasead .table_vh_c .td span {
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem;
+    float: right;
+    position: absolute;
+    top: 50%;
+}
+.td>a{
+    width: 100%;height: 100%;display: flex;;;
+}
+.dlt-detail>em{
+    line-height: 1.5;
+    font-style: normal;
+    font-size: .25rem;
+    color: #a9dcff;
+}
+.dlt-logo>em{
+    font-size: .340rem;color: #008ce3;
+}
+.dlt-detail>span{
+    border: 1px solid;
+    padding: .2rem;background: blue;border-radius: .4rem;color: #fff;
+    position: relative;
+    top: -.2rem;
+}

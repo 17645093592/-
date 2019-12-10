@@ -1,0 +1,24 @@
+.upcoming, .thefilm {
+    padding: 1.2em 1.5em 1.5em 1.5em;
+}
+.cin_line {
+    margin: 0 -1.5em;
+    padding: 1em 0 0;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.cin_line p:first-child {
+    height: .5em;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 .2em .2em rgba(51,51,51,0.05);
+    position: relative;
+    z-index: 1;
+}
+.cin_line p:last-child {
+    height: 1.2em;
+    background: #f6f6f6;
+    position: relative;
+    z-index: 0;
+}

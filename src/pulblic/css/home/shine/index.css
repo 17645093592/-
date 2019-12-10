@@ -1,0 +1,62 @@
+.indexmovie {
+    padding: .5em 1.5em 1.5em;
+    border-bottom: 1px solid #ccc;
+}
+.indexclick {
+    border-bottom: none;
+  
+}
+.indexclick h2{top: .2rem;}
+.indexmovie h2 {
+    position: relative;
+    zoom: 1;
+}
+.indexmovie h2 div {
+    display: block;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+}
+.indexmovie h2 div span{flex: 1;}
+.indexmovie ul {
+    overflow: hidden;
+    height: 100%;
+}
+.indexmovie li {
+    float: left;
+    display: inline;
+    width: 25%;
+    text-align: center;
+}
+.mpic, .indexmovie li p {
+    width: 6.5em;
+    margin: auto;
+}
+.mpic {
+    position: relative;
+}
+.m_score {
+    position: absolute;
+    right: .3em;
+    top: .3em;
+}
+.m_score {
+    background: #659d0e;
+    width: 2em;
+    height: 1.8em;
+    color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 1.8em;
+    text-align: center;
+}
+.m_score i {
+    font-size: 1.1em;
+}
+.mpic img {
+    width: 100%;
+    border: 0;
+    border: 1px solid #ddd;
+}
