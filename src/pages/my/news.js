@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import "../../assets/my/news.css"
 import axios from "axios"
-import moment from "moment"
 
 class News extends Component {
     componentDidMount() {
@@ -44,7 +43,7 @@ class News extends Component {
                     data: [...this.state.data,...res.data.newsList],
                     page: this.state.page + 1
                 }, _ => {
-                    console.log(this.state.data)
+                    // console.log(this.state.data)
                 })
             })
 

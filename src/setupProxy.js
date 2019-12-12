@@ -16,4 +16,8 @@ module.exports = (app)=>{
        target:"https://content-api-m.mtime.cn",
        changeOrigin:true,
    }))
+   app.use(proxy("/discovery",{
+       target:" https://ticket-api-m.mtime.cn",
+       changeOrigin:true
+   }))
 }

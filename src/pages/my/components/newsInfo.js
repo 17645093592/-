@@ -14,6 +14,9 @@ class NewsInfo extends Component {
         
     this.getInfo()
     }
+    handleBack(){
+        this.props.history.goBack()
+    }
     getInfo(){
         const id = this.props.location.pathname.split("/")[2]
         axios.get(`/news/detail.api?newsId=${id}&t=2019121210291178551`)
@@ -27,11 +30,11 @@ class NewsInfo extends Component {
         })
     }
     render() {
-        return  this.state.length == 0 ?
+        return  this.state.length === 0 ?
             (<Fragment>
                 <div>
                     <div className="topBar">
-                        <Icon style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} type="left" />
+                        <Icon style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} type="left" onClick={this.handleBack.bind(this)} />
 
                         <Icon type="share-alt" style={{ float: "right", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} />
                     </div>
@@ -67,7 +70,7 @@ class NewsInfo extends Component {
             (<Fragment>
             <div>
                 <div className="topBar">
-                    <Icon style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} type="left" />
+                    <Icon style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} type="left" onClick={this.handleBack.bind(this)} />
 
                     <Icon type="share-alt" style={{ float: "right", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} />
                 </div>

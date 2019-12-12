@@ -1,0 +1,29 @@
+.trailerList ul{
+    padding: 0  .3rem;
+    margin-bottom: 0;
+}
+.trailerList ul span{
+    display: block;
+}
+.trailerList ul .type2{
+    padding: .3rem 0;
+    border-bottom: .02rem solid #cccccc;
+    height: 2.3rem;
+}
+.trailerList ul .type2 .picBox{
+    width: 3rem;
+    height: 1.7rem;
+    border: .01rem solid #cccccc;
+    float: left;
+}
+.trailerList ul .type2 .textBox{
+    float: right;
+    width: 3.5rem;
+    position: relative;
+    min-height: 1.6rem;
+}
+.trailerList ul .type2 .textBox .title{
+    font-size: .36rem;
+    font-weight: bold;
+    color: black;
+}

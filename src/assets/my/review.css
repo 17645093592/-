@@ -1,0 +1,10 @@
+.reviewList{border-top:.02rem solid #d8d8d8;padding:0 .3rem}
+.reviewList li{
+    border-bottom: .01rem solid gray;
+}
+.reviewList li h2{font-weight:700;margin-top:.2rem}
+.reviewList li .table img{
+    width: .6rem;
+    height: .6rem;
+    border-radius: 100%;
+}
