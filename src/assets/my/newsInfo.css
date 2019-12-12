@@ -1,0 +1,92 @@
+.topBar{
+    background: #1c2635;
+    height: 1rem;
+    line-height: 1rem;
+    color: white;
+    font-size: .4rem;
+    text-align: center;
+}
+.newsBox{
+    padding: .3rem;
+}
+.newsBox h2{
+    font-size: .5rem;
+}
+.newsBox .othersBox{
+    padding-bottom: .3rem;
+    overflow: hidden;
+}
+.othersBox time{
+    float: left;
+    color: #999999;
+    font-size: .3rem;
+}
+.othersBox .spanBox{
+    float: right;
+    color: blue;
+    font-size: .32rem;
+    width: 3.5rem;
+}
+.othersBox .spanBox .about{
+    float: right;
+}
+
+.contentBox{
+    font-size: .4rem;
+}
+.contentBox video{
+    width: 100%;
+    height: auto;
+}
+.contentBox img{
+    width: 100%;
+    height: auto;
+}
+.editor{
+font-size: .3rem;
+color: black;
+
+}
+.bottomBar{
+    width: 100%;
+    border: .01rem solid gray;
+    height: 1rem;
+    position: relative;
+}
+.bottomBar .messageNum{
+    width: .35rem;
+    height: .35rem;
+    background: red;
+    display: block;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    font-size: .28rem;
+    position: absolute;
+    line-height: .35rem;
+    font-weight: bold;
+    top: .05rem;
+    left: .5rem;
+}
+.bottomBar .aboutMovie{
+    margin: .1rem;
+    padding: .05rem;
+    display: block;
+    position: absolute;
+    right: .1rem;
+    font-size: .35rem;
+    border-radius: .5rem;
+    border: .05rem solid #cccccc;
+}
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 0;
+    line-height: 0;
+    background: #364d79;
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide img {
+    width: 100%;
+    height: auto;
+  }

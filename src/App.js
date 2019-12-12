@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from "./components/header"
 import { Route, Redirect } from "react-router-dom"
-import { maxRoutes, maiRoutes, myRoutes } from "./router"
+import { maxRoutes, maiRoutes, myRoutes,infoRoutes } from "./router"
 export default class App extends Component {
     render() {
         return (
@@ -23,6 +23,11 @@ export default class App extends Component {
                     {myRoutes.map(route => {
                         return <Route path={route.pathname} component={route.component} key={route.pathname} />
                     })}
+                    {
+                        infoRoutes.map(route=>{
+                            return <Route path={route.pathname} component={route.component} key={route.pathname} />
+                        })
+                    }
                 </div>
 
             </>

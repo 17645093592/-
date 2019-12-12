@@ -23,6 +23,7 @@
 
 .newsList ul{
     padding: 0  .3rem;
+    margin-bottom: 0;
 }
 .newsList ul span{
     display: block;
@@ -95,4 +96,12 @@
     bottom: 0; 
     left: 1.8rem;
     font-size: .27rem;
+}
+.btnMore{
+    width: 100%;
+    color: blue;
+    text-align: center;
+    font-size: .35rem;
+    height: .5rem;
+    line-height: .5rem;
 }
