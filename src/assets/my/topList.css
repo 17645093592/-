@@ -1,0 +1,12 @@
+.topMenu{height:2.5rem}
+.topMenu ul{display:flex;height:100%}
+.topMenu ul li{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:space-around}
+.topList{border-top:.02rem solid #d8d8d8;padding-left:.3rem}
+.topList li{border-bottom:.02rem solid #d8d8d8;position:relative}
+.topList li h2{font-weight:700;margin-top:.2rem}
+.topList li h3{font-size:.3rem;color:#777;margin-bottom: .3rem;width: 5rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+
+
+
+

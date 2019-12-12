@@ -26,3 +26,26 @@ module.exports = (app)=>{
     
    
 }
+const proxy = require("http-proxy-middleware");
+
+module.exports = (app)=>{
+    app.use(proxy("/api",{
+        target:"https://api.ricebook.com",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/api":""
+        }
+    }))
+    app.use(proxy("/Service",{
+        target:" https://m.mtime.cn",
+        changeOrigin:true,
+    }))
+   app.use(proxy("/news",{
+       target:"https://content-api-m.mtime.cn",
+       changeOrigin:true,
+   }))
+   app.use(proxy("/discovery",{
+       target:" https://ticket-api-m.mtime.cn",
+       changeOrigin:true
+   }))
+}
