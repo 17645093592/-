@@ -87,6 +87,6 @@ color: black;
   }
   
   .ant-carousel .slick-slide img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height:4.5rem;
   }
