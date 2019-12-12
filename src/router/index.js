@@ -5,7 +5,8 @@ import {
     Shopping,
     Content,
     xiangqing,
-    Seach
+    Seach,
+    City
 } from "../pages"
 
 
@@ -56,5 +57,10 @@ export const maiRoutes = [
         pathname:"/seach",
         component:Seach,
        
-    }
+    },
+    {
+        pathname:"/city",
+        component:City,
+       
+    },
 ]

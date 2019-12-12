@@ -102,3 +102,29 @@
     position: relative;
     top: -.2rem;
 }
+.city>p{
+    color: #777; 
+    background: #ebebeb;
+    padding: 0 1em;
+    line-height: 2em;
+    height: 2em;
+    box-shadow: 0 1px 1px rgba(51,51,51,0.1) inset;
+}
+.clearfix{
+    overflow: hidden;
+    padding: 0 1.5em 1.5em;
+}
+
+.clearfix>li{
+    float: left;
+    display: inline;
+    width: 25%;
+    padding: 1.5em 0 0;
+    color: #333;
+}
+.llis{
+    height: .6rem;
+    line-height: .6rem;
+    border-bottom: 1px solid #ccc;
+    margin-top: .2rem;
+}

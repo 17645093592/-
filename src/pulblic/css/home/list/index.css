@@ -1,0 +1,143 @@
+.cin_line p:first-child {
+    height: .5em;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 .2em .2em rgba(51,51,51,0.05);
+    position: relative;
+    z-index: 1;
+}
+.cin_line p:last-child {
+    height: 1.2em;
+    background: #f6f6f6;
+    position: relative;
+    z-index: 0;
+}
+.m_bg_gray {
+    background: #f6f6f6;
+}
+.m_bg_gray, .m_bg_white {
+    height: 100%;
+}
+.mallshop {
+    background: #fff;
+    position: relative;
+    height: 28.7rem;
+    margin-bottom: .4rem;
+    height: auto;
+}
+.mallshop .shop00 {
+    width: 100%;
+}
+.mallshop .shopmid {
+    position: relative;
+}
+#firstH5UrlA {
+    display: block;
+}
+.firstH5UrlImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.todayhot {
+    padding: .5em 1.5em 0;
+}
+.m_bg_white {
+    background: #fff;
+}
+.todayhot h2 {
+    position: relative;
+    word-break: break-all;
+}
+.todayhot h2  b {
+    font-size: 1.8em;
+}
+.todayhot li:first-child {
+    padding-top: 0;
+}
+.todayhot li {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 1.3em 0 1.3em 0;
+}
+.todaypic_bigimg {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.m_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.video_icon {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.5em;
+    margin-top: -1.5em;
+    z-index: 2;
+    background: url(//static1.mtime.cn/html5/20191122140130/images/2014/viceoplay.png) no-repeat center center;
+    background-size: cover;
+}
+
+.todayhot h2 {
+    position: relative;
+    word-break: break-all;
+}
+.todayhot li .todaytxt h2  {
+    font-size: 1.6em;
+    line-height: 1.1;
+}
+.todayhot h2  {
+    display: block;
+}
+
+.todayhot li .todaytxt p span {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.todayhot li .todaytxt p time {
+    font-size: 1.1em;
+    color: #999;
+}
+.todaytxt>p{
+    margin-bottom: 0;
+}
+.table{
+    width: 100%;
+    display: -webkit-box;
+}
+.todayhot li .todaypic {
+    margin-right: 1em;
+    width: 11.2em;
+}
+.m_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.todayhot li .todaytxt h2 {
+    padding: 0 0 .4em 0;
+}
+.todayhot h2 {
+    position: relative;
+    word-break: break-all;
+}
+.todayhot li .todaytxt h2  {
+    font-size: 1.6em;
+    line-height: 1.1;
+}
+.todayhot h2  {
+    display: block;
+}
+.todayhot li .todaytxt p {
+    padding: .4em 0;
+}
+.todaytxt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

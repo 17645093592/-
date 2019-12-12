@@ -1,66 +1,48 @@
 import React, { Component } from 'react'
 import {Icon} from "antd"
 import "../../../pulblic/css/home/shine/index.css"
+import axios from "axios"
 export default class shine extends Component {
+    state={
+        onebox:[]
+    }
     render() {
         return (
             <div className="indexmovie">
                 <h2 onClick={this.clickHandler.bind(this)}><div><span>正在热映（56部）</span><Icon type="right" /></div></h2>
                 <ul>
-                    <li>
-                        <div className="mpic">
-                            <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-                            <p><span>勇敢者游戏2：再战巅峰</span></p>
-                        </div>
-                    </li>
-                    <li>
-                    <div className="mpic">
-                        <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-                        <p><span>勇敢者游戏2：再战巅峰</span></p>
-                    </div>
-                </li>
-                <li>
-                <div className="mpic">
-                    <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-                    <p><span>勇敢者游戏2：再战巅峰</span></p>
-                </div>
-            </li>
-            <li>
-            <div className="mpic">
-                <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-                <p><span>勇敢者游戏2：再战巅峰</span></p>
-            </div>
-        </li>
-        <li>
-        <div className="mpic">
-            <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-            <p><span>勇敢者游戏2：再战巅峰</span></p>
-        </div>
-    </li>
-    <li>
-    <div className="mpic">
-        <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-        <p><span>勇敢者游戏2：再战巅峰</span></p>
-    </div>
-</li>
-<li>
-<div className="mpic">
-    <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-    <p><span>勇敢者游戏2：再战巅峰</span></p>
-</div>
-</li>
-<li>
-<div className="mpic">
-    <div><img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F11%2F15%2F102151.17165213_1280X720X2.jpg&width=130&height=195&clipType=4"></img><em className="m_score"><i>7.0</i></em></div>
-    <p><span>勇敢者游戏2：再战巅峰</span></p>
-</div>
-</li>
-
+                    {
+                        this.state.onebox.map((item,index)=>{
+                            return  <li onClick={this.clickHandder.bind(this,item.id,item.rd)} className={item.id} key={index}>
+                                        <div className="mpic">
+                                            <div><img src={item.img}></img><em className="m_score"><i>{item.r}</i></em></div>
+                                            <p><span>{item.t}</span></p>
+                                        </div>
+                                     </li>
+                        })
+                    }
                 </ul>
             </div>
         )
     }
+    clickHandder(id,rd){
+        let mm = rd.substring(4).substring(0,2),
+        dd = rd.substring(6);
+ this.props.history.push(`/xiangqing/${id}/${mm}/${dd}`)
+    }
     clickHandler(){
         this.props.history.push("/content")
+    }
+    getShouye(){
+        axios.get("/Service/callback.mi/Showtime/LocationMovies.api?locationId=290&t=201912102046147443")
+        .then(err=>{
+            let box =err.data.ms.splice(0,8)
+            this.setState({
+                onebox:box
+            })
+        })
+    }
+    componentDidMount(){
+        this.getShouye()
     }
 }

@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import "../../../pulblic/css/connect/right.css"
-
-export default class Right extends Component {
+import {withRouter} from "react-router-dom"
+import axios from "axios"
+ class Right extends Component {
+    state={
+        data1:[],
+        data2:[]
+    }
     render() {
         return (
             <div className="upcoming">
@@ -13,28 +18,33 @@ export default class Right extends Component {
                     <div>
                         <div className="filmscroll">
                             <ul className="table transition4">
-                                <li>
-                                    <time><span>9月20日</span></time>
-                                    <div className="table movielist">
-                                        <div className="upmovie_pic">
-                                            <div><img className="m_img img_box" src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F08%2F20%2F184519.87782615_1280X720X2.jpg&width=170&height=255&clipType=4"></img></div>
-                                        </div>
-                                        <div className="upmovie_txt td">
-                                            <dl>
-                                                <dt>
-                                                    <div><b>小Q</b></div>
-                                                </dt>
-                                                <dd>
-                                                    <p className="txt_elli">导演：罗永昌</p>
-                                                    <p className="txt_elli">演员：任达华,梁咏琪</p>
-                                                </dd>
-                                            </dl>
-                                            <div className="btnsa">
-                                                <div className="m_btn_green">预告片</div>
+                                {
+                                    this.state.data1.map((item,index)=>{
+                                        return <li onClick={this.clickHanddde.bind(this,item.id,item.rMonth,item.rDay)} key={index}>
+                                        <time><span>{item.rMonth}月{item.rDay}日</span></time>
+                                        <div className="table movielist">
+                                            <div className="upmovie_pic">
+                                                <div><img className="m_img img_box" src={item.image}></img></div>
                                             </div>
-                                        </div>  
-                                    </div>
-                                </li>
+                                            <div className="upmovie_txt td">
+                                                <dl>
+                                                    <dt>
+                                                        <div><b>{item.title}</b></div>
+                                                    </dt>
+                                                    <dd>
+                                                        <p className="txt_elli">导演：{item.director}</p>
+                                                        <p className="txt_elli">演员：{item.actor1},{item.actor2}</p>
+                                                    </dd>
+                                                </dl>
+                                                <div className="btnsa">
+                                                    <div className="m_btn_green">预告片</div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </li>
+                                    })
+                                }
+                               
                             </ul>
                         </div>
                     </div>
@@ -45,54 +55,40 @@ export default class Right extends Component {
                 <div className="commovie">
                     <h2 className="title"><b>即将上映</b><span>(48部)</span></h2>
                     <div className="commovielist">
-                        <time className="month">
-                            <span>9月</span>
-                        </time>
+                      
                         <ul>
-                            <li>
-                                <time className="day"><span>20日</span></time>
-                                <div className="table movielist">
-                                    <div className="upmovie_pic">
-                                        <div><img className="m_img img_box" src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F08%2F20%2F184519.87782615_1280X720X2.jpg&width=130&height=195&clipType=4"></img></div>
-                                    </div>
-                                    <div className="upmovie_txt td">
-                                         <dl>
-                                                <dt>
-                                                    <div><b>小Q</b></div>
-                                                </dt>
-                                                <dd>
-                                                    <p><b className="color">293</b> 人想看 - 剧情</p>
-                                                    <p>导演：罗永昌</p>
-                                                </dd>
-                                            </dl>
-                                            <div className="btnsaa">
-                                                <div className="m_btn_green">预告片</div>
+                            {
+                                this.state.data2.map((item,index)=>{
+                                    return  <li onClick={this.clickHanddde.bind(this,item.id,item.rMonth,item.rDay)} className={item.id} key={index}>
+                                        <time className="month">
+                                        <span>{item.rMonth}月-----</span>
+                                        </time>
+                                        <time className="day"><span>{item.rDay}日</span></time>
+                                        <div className="table movielist">
+                                            <div className="upmovie_pic">
+                                                <div><img className="m_img img_box" src={item.image}></img></div>
                                             </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                            <time className="day"><span>20日</span></time>
-                            <div className="table movielist">
-                                <div className="upmovie_pic">
-                                    <div><img className="m_img img_box" src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F08%2F20%2F184519.87782615_1280X720X2.jpg&width=130&height=195&clipType=4"></img></div>
-                                </div>
-                                <div className="upmovie_txt td">
-                                     <dl>
-                                            <dt>
-                                                <div><b>小Q</b></div>
-                                            </dt>
-                                            <dd>
-                                                <p><b className="color">293</b> 人想看 - 剧情</p>
-                                                <p>导演：罗永昌</p>
-                                            </dd>
-                                        </dl>
-                                        <div className="btnsaa">
-                                            <div className="m_btn_green">预告片</div>
+                                            <div className="upmovie_txt td">
+                                                <dl>
+                                                        <dt>
+                                                            <div><b>{item.title}</b></div>
+                                                        </dt>
+                                                        <dd>
+                                                            <p><b className="color">{item.wantedCount}</b> 人想看 - 剧情</p>
+                                                            <p>导演：{item.director}</p>
+                                                        </dd>
+                                                    </dl>
+                                                    <div className="btnsaa">
+                                                    {
+                                                        item.isVideo ?  <div className="m_btn_green">预告片</div> : null
+                                                    } 
+                                                    </div>
+                                            </div>
                                         </div>
-                                </div>
-                            </div>
-                        </li>
+                                </li>
+                                })
+                            }
+                          
                         </ul>
                     </div>
                 </div>
@@ -100,4 +96,22 @@ export default class Right extends Component {
             </div>
         )
     }
+    clickHanddde(id,y,r){
+        this.props.history.push(`/xiangqing/${id}/${y}/${r}`)
+    }
+    getRight(){
+        axios.get("/Service/callback.mi/Movie/MovieComingNew.api?locationId=290&t=201912102134166727")
+        .then(err=>{
+            this.setState(()=>{
+                return{
+                    data1:err.data.attention,
+                    data2:err.data.moviecomings
+                }
+            })
+        })
+    }
+    componentDidMount(){
+      this.getRight()
+    }
 }
+export default withRouter(Right)
