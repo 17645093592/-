@@ -1,0 +1,43 @@
+.shoop-column{
+    background: #fff;
+    height: 6rem;
+    width: 100%;
+    margin-top: .2rem;
+}
+.shoop-column article{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+}
+.shoop-column article .column-gsl{
+    height: 100%;
+    width: 50%;
+    border: .02rem solid #ccc;
+    display: flex;
+}
+.shoop-column article .column-box{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: .02rem solid #ccc;
+}
+.shoop-column article .column-box .box-box{
+    width: 100%;
+    height: 50%;
+    border: .02rem solid #ccc;
+}
+.column-foot{
+    height: 2rem;
+    width: 100%;
+    border: .02rem solid #ccc;
+}
+.column-box .box-box .img-box{
+    height: 100%;
+    width: 100%;
+}
+.column-img{
+    height: 100%;
+    width: 100%;
+}

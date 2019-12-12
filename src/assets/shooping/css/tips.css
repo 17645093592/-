@@ -1,0 +1,42 @@
+.shoop-tips{
+    margin-top: .3rem;
+    background: #fff;
+    height: 6.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tips-top{
+    width: 100%;
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tips-top div {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.tips-con{
+    height: 3rem;
+    width: 100%;
+}
+.tips-con img{
+    width: 100%;
+    height: 100%;
+}
+.tips-foot{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.tips-foot li {
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+.tips-foot li img{
+    width: 100%;
+    height: 65%;
+}

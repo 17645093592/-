@@ -1,0 +1,20 @@
+.shoop-top-box {
+    background: #f0f0f0;
+    display: flex;
+    box-sizing: border-box;
+    height: 1rem;
+    width: 100%;
+    padding: .2rem .2rem .2rem .3rem;
+}
+.shoop-top-box Button{
+    height: .6rem;
+    width: 6.1rem;
+    text-align: left;
+    border-radius: .2rem;
+    font-size: .3rem;
+    margin-right: .3rem;
+}
+.shoop-top-right{
+    font-size: .6rem;
+    color: #0dedCD !important;
+}
