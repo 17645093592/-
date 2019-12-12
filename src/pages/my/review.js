@@ -5,7 +5,6 @@ class Review extends Component {
     getList(){
         axios.get("/Service/callback.mi/MobileMovie/Review.api?needTop=false&t=201912121929662996")
         .then(res=>{
-            console.log(res.data)
             this.setState({
                 list:res.data
             })

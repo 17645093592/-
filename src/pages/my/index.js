@@ -1,14 +1,4 @@
-import React, { Component } from 'react'
 
- class My extends Component {
-    render() {
-        return (
-            <div>
-            My
-            </div>
-        )
-    }
-}
 
 import React, { Component } from 'react'
 import {  Redirect } from "react-router-dom"
@@ -33,7 +23,7 @@ class My extends Component {
                         })
                     }
                 </Tabs>
-                {/* <Redirect from="/my" to="/my/news" exact /> */}
+                 <Redirect from="/my" to="/my/news" exact /> 
             </div>
         )
     }

@@ -23,12 +23,6 @@ module.exports = (app)=>{
         target:" https://content-api-m.mtime.cn",
         changeOrigin:true,
     }))
-    
-   
-}
-const proxy = require("http-proxy-middleware");
-
-module.exports = (app)=>{
     app.use(proxy("/api",{
         target:"https://api.ricebook.com",
         changeOrigin:true,
@@ -48,4 +42,7 @@ module.exports = (app)=>{
        target:" https://ticket-api-m.mtime.cn",
        changeOrigin:true
    }))
+   
 }
+
+
