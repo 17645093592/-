@@ -12,7 +12,6 @@ export default class column extends Component {
         }
     }
     render() {
-        console.log(this.state.c)
         return (
             <div className="shoop-column">
                 <article>
@@ -21,7 +20,7 @@ export default class column extends Component {
                     </div>
                     <div className="column-box">
                         {this.state.c.map((c,index) => (
-                            <div className="box-box">
+                            <div className="box-box" key={index}>
                                 <img src={c.image} className="img-box"/>
                             </div>
                         ))}

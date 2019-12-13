@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import "../../../assets/shooping/css/laber.css"
+import Logo from "../../../components/bscroll/index"
 export default class laber extends Component {
     constructor(props) {
         super(props)
@@ -10,6 +11,7 @@ export default class laber extends Component {
         }
     }
     render() {
+
         return (
             <div className="laber-box">
                 <div className="laber-title">
@@ -17,10 +19,11 @@ export default class laber extends Component {
                         <i>你可能感兴趣的</i>
                     </span>
                 </div>
+                <Logo ref="bscroll">
                 <article className="laber-list">
                     <ul>
-                        {this.state.data.map(Item => (
-                            <li className={Item.goodsId}>
+                        {this.state.data.map((Item,index) => (
+                            <li key={index} className={Item.goodsId}>
                                 <div className="list-box">
                                     <div className="list-top">
                                         <i style={{background:`${Item.background}`}}>{Item.iconText}</i>
@@ -40,16 +43,35 @@ export default class laber extends Component {
                         ))}
                     </ul>
                 </article>
+                </Logo>
             </div>
         )
     }
-    componentDidMount() {
-        axios.get(`Service/callback-mall.mi/ECommerce/RecommendProducts.api?t=201912139141266557&goodsIds=105808%2C107858%2C108795&pageIndex=${this.state.cass}`)
-            .then(res => {
-                this.setState({
-                    data: [...this.state.data,...res.data.goodsList],
-                    cass:this.state.cass++
-                })
+    getList(index){
+
+        axios.get(`Service/callback-mall.mi/ECommerce/RecommendProducts.api?t=201912139141266557&goodsIds=105808%2C107858%2C108795&pageIndex=${index?++index:"1"}`)
+        .then(res => {
+            this.setState({
+                data: [...this.state.data,...res.data.goodsList],
+                cass:++this.state.cass
             })
+        })
+    }
+
+    componentWillUpdate(){
+        this.refs.bscroll.handleRestUp()
+
+        this.refs.bscroll.handlefinishPullDown()
+        
+    }
+    componentDidMount() {
+       
+      this.getList()
+     
+   
+      this.refs.bscroll.handlepullingUp(()=>{
+          this.getList(this.state.cass)
+         })
+      
     }
 }
