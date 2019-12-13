@@ -31,7 +31,6 @@ class list extends Component {
     componentDidMount() {
         axios.get("Service/callback-mall.mi/PageSubArea/MarketFirstPageNew.api?t=201912111426513284")
             .then(res => {
-                console.log(res)
                 this.setState({
                     data: [...res.data.navigatorIcon]
                 })

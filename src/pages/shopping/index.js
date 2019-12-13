@@ -6,6 +6,8 @@ import Banner from "./components/banner"
 import List from "./components/list"
 import Column from "./components/column"
 import Tips from "./components/tips"
+import Laber from "./components/laber"
+
  class Shopping extends Component {
     render() {
         return (
@@ -15,6 +17,7 @@ import Tips from "./components/tips"
              <List />
              <Column />
              <Tips />
+             <Laber />
             </div>
         )
     }
