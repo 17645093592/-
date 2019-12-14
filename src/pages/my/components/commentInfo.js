@@ -15,7 +15,7 @@ class CommentInfo extends Component {
         }
     }
     getList() {
-        console.log(this.props.location.pathname.slice(13))
+        // console.log(this.props.location.pathname.slice(13))
         // if(this.state.id = 0){
         //     this.setState({
         //         id:this.props.location.pathname.slice(13)
@@ -27,7 +27,7 @@ class CommentInfo extends Component {
         const id = this.props.location.pathname.slice(13)
         Axios.get(`Service/callback.mi/News/Comment.api?t=201912131122723797&newsId=${id}&pageIndex=${this.state.pageIndex}&reviewId=${id}`)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
 
                 if (res.data.length != 0) {
                     this.setState({
@@ -68,7 +68,7 @@ class CommentInfo extends Component {
             {this.state.count}条评论
                         <Icon type="share-alt" style={{ float: "right", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} />
         </div>
-            <div className="commentList" style={{ padding: "0 0 0 .3rem", height: "8.9rem", zIndex: "100", overflow: "hidden" }} ref={(div) => this.wrapper = div}>
+            <div className="commentList" style={{ padding: "0 0 0 .3rem", height: "11.3rem", zIndex: "100", overflow: "hidden" }} ref={(div) => this.wrapper = div}>
                 <ul style={{ paddingBottom: "1rem" }}>
                     {this.state.list.map((item, index) => {
                         return (
@@ -95,7 +95,17 @@ class CommentInfo extends Component {
             <div className="replyBox" style={{ background: "#f6f6f6", position: "fixed", bottom: "0", height: "1rem", width: "100%", borderTop: ".01rem solid black" }}>
                 <input style={{ height: ".8rem", marginTop: ".09rem", border: ".01rem solid black", marginLeft: ".3rem", borderRadius: ".1rem", width: "5.5rem", fontSize: ".3rem", paddingLeft: ".2rem" }} placeholder="留下我想说的..." />
                 <span style={{ fontSize: ".35rem", marginLeft: ".5rem" }}>发送</span>
-            </div>            </Fragment>) : ""
+            </div>            </Fragment>) : (<Fragment><div className="topBar">
+            <Icon style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} type="left" onClick={this.handleBack.bind(this)} />
+            {this.state.count}条评论
+                        <Icon type="share-alt" style={{ float: "right", width: "1rem", height: "1rem", fontSize: ".5rem", color: "white", lineHeight: "1rem" }} />
+        </div>
+           
+
+            <div className="replyBox" style={{ background: "#f6f6f6", position: "fixed", bottom: "0", height: "1rem", width: "100%", borderTop: ".01rem solid black" }}>
+                <input style={{ height: ".8rem", marginTop: ".09rem", border: ".01rem solid black", marginLeft: ".3rem", borderRadius: ".1rem", width: "5.5rem", fontSize: ".3rem", paddingLeft: ".2rem" }} placeholder="留下我想说的..." />
+                <span style={{ fontSize: ".35rem", marginLeft: ".5rem" }}>发送</span>
+            </div>            </Fragment>)
 
 
 

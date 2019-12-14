@@ -29,7 +29,7 @@ class NewsInfo extends Component {
                 data: res.data.data,
                 length:res.data.data.images.length
             },_=>{
-                console.log(this.state.data)
+                // console.log(this.state.data)
             })
         })
     }
