@@ -13,8 +13,8 @@ import Trailer from "../pages/my/trailer"
 import TopList from "../pages/my/topList"
 import News from "../pages/my/news"
 import NewsInfo from "../pages/my/components/newsInfo"
-
-
+import Xiangq from "../pages/shopping/components/list-xq"
+import Xiangx from "../pages/shopping/components/list.xx"
 export const maxRoutes = [
     {
         pathname:"/home",
@@ -48,7 +48,20 @@ export const maxRoutes = [
         component:Content,
         display:false
 
-    }
+    },
+    {
+        pathname:"/xiangq",
+        component:Xiangq,
+        display:false
+
+    },
+    {
+        pathname:"/xiangx",
+        component:Xiangx,
+        display:false
+
+    },
+    
 ]
 
 

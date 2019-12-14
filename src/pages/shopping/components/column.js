@@ -33,6 +33,7 @@ export default class column extends Component {
         )
     }
     componentDidMount() {
+        
         axios.get("Service/callback-mall.mi/PageSubArea/MarketFirstPageNew.api?t=201912111426513284")
             .then(res => {
                 this.setState({
