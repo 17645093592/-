@@ -7,7 +7,8 @@ class NewsInfo extends Component {
         super(props)
         this.state={
             data:{},
-            length:0
+            length:0,
+            id:""
         }
     }
     componentDidMount(){
@@ -19,6 +20,9 @@ class NewsInfo extends Component {
     }
     getInfo(){
         const id = this.props.location.pathname.split("/")[2]
+        this.setState({
+            id
+        })
         axios.get(`/news/detail.api?newsId=${id}&t=2019121210291178551`)
         .then(res=>{
             this.setState({
@@ -28,6 +32,9 @@ class NewsInfo extends Component {
                 console.log(this.state.data)
             })
         })
+    }
+    handleJump(){
+        this.props.history.push(`/commentInfo/${this.state.id}`,)
     }
     render() {
         return  this.state.length === 0 ?
@@ -43,7 +50,7 @@ class NewsInfo extends Component {
                         <div className="othersBox">
                             <time>{this.state.data.time}</time>
                             <div className="spanBox">
-                                <span className="comment">评论{this.state.data.commentCount}</span>
+                                <span className="comment" onClick={this.handleJump.bind(this,this.state.id)}>评论{this.state.data.commentCount}</span>
                                 <span className="about">相关电影/影人</span>
                             </div>
                         </div>
@@ -59,7 +66,7 @@ class NewsInfo extends Component {
                     </div>
                     <div className="bottomBar">
                         <Icon type="message" style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "black", lineHeight: "1rem" }} />
-                        <span className="messageNum">{this.state.data.commentCount}</span>
+                        <span className="messageNum" onClick={this.handleJump.bind(this,this.state.id)}>{this.state.data.commentCount}</span>
                         <span className="aboutMovie">相关电影/影人</span>
                     </div>
                 </div>
@@ -102,7 +109,7 @@ class NewsInfo extends Component {
                     <div className="othersBox">
                         <time>{this.state.data.time}</time>
                         <div className="spanBox">
-                            <span className="comment">评论{this.state.data.commentCount}</span>
+                            <span className="comment" onClick={this.handleJump.bind(this,this.state.id)}>评论{this.state.data.commentCount}</span>
                             <span className="about">相关电影/影人</span>
                         </div>
                     </div>
@@ -114,7 +121,7 @@ class NewsInfo extends Component {
                 </div>
                 <div className="bottomBar">
                     <Icon type="message" style={{ float: "left", width: "1rem", height: "1rem", fontSize: ".5rem", color: "black", lineHeight: "1rem" }} />
-                    <span className="messageNum">{this.state.data.commentCount}</span>
+                    <span className="messageNum" onClick={this.handleJump.bind(this,this.state.id)}>{this.state.data.commentCount}</span>
                     <span className="aboutMovie">相关电影/影人</span>
                 </div>
             </div>

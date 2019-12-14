@@ -12,6 +12,7 @@ import Trailer from "../pages/my/trailer"
 import TopList from "../pages/my/topList"
 import News from "../pages/my/news"
 import NewsInfo from "../pages/my/components/newsInfo"
+import CommentInfo from "../pages/my/components/commentInfo"
 
 export const maxRoutes = [
     {
@@ -83,5 +84,10 @@ export const infoRoutes = [
         pathname:"/newsInfo",
         component:NewsInfo,
         name:"新闻详情"
+    },
+    {
+        pathname:"/commentInfo",
+        component:CommentInfo,
+        name:"评论"
     }
 ]
