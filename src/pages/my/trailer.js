@@ -8,7 +8,7 @@ class Trailer extends Component {
             this.setState({
                 data:res.data.data.trailers
             },_=>{
-                console.log(this.state.data)
+                // console.log(this.state.data)
             })
         })
 

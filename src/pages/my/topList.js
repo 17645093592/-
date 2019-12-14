@@ -10,11 +10,11 @@ class TopList extends Component {
     getList(){
        axios.get("/Service/callback.mi/TopList/TopListOfAll.api?t=2019121217421038426&pageIndex=1")
        .then(res=>{
-           console.log(res.data.topLists)
+        //    console.log(res.data.topLists)
            this.setState({
                list:[...res.data.topLists]
            },_=>{
-               console.log(this.state.list)
+            //    console.log(this.state.list)
            })
            
        }) 

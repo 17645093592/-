@@ -23,7 +23,7 @@ class My extends Component {
                         })
                     }
                 </Tabs>
-                 <Redirect from="/my" to="/my/news" exact /> 
+                <Redirect from="/my" to="/my/news" exact />
             </div>
         )
     }
