@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Icon, Button } from "antd"
-
+import "../../../assets/shooping/css/top.css"
 export default class top extends Component {
     render() {
         return (

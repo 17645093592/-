@@ -1,0 +1,23 @@
+.como-top-box {
+    background: #333;
+    display: flex;
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 100%;
+    padding: .2rem .2rem .2rem .3rem;
+}
+.como-top-con{
+    padding-top: .28rem;
+    font-size: .6rem;
+    color: #fff !important;
+}
+.como-top-right{
+    padding-top: .28rem;
+    font-size: .6rem;
+    color: #fff !important;
+}
+.como-top-left{
+    padding-top: .28rem;
+    font-size: .6rem;
+    color: #fff !important;
+}

@@ -1,0 +1,26 @@
+.head-top-box {
+    background: #333;
+    display: flex;
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 100%;
+    padding: .2rem .2rem .2rem .3rem;
+}
+.head-top-box Button{
+    height: .6rem;
+    width: 5rem;
+    text-align: left;
+    border-radius: .1rem;
+    font-size: .34rem;
+    margin:.3rem .3rem;
+}
+.head-top-right{
+    padding-top: .28rem;
+    font-size: .6rem;
+    color: #fff !important;
+}
+.head-top-left{
+    padding-top: .28rem;
+    font-size: .6rem;
+    color: #fff !important;
+}

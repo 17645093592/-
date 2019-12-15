@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {withRouter} from "react-router-dom"
 import "../../../assets/shooping/css/list.css"
 
 class list extends Component {
@@ -8,10 +9,12 @@ class list extends Component {
         this.state = {
             data: []
         }
-        this.listClik = this.listClik.bind(this)
+       
     }
-    listClik() {
-        this.props.history.push("/home");
+    listClik(url) {
+        console.log(url)
+        let a = url.split("=")[1] ? url.split("=")[1] : "0"
+        this.props.history.push(`/xiangq/${a}`);
     }
     render() {
         return (
@@ -19,7 +22,7 @@ class list extends Component {
             <ul>
                 {this.state.data.map((item,index)=>{
                     return (
-                    <li key={index} onClick={this.listClik}>
+                    <li key={index} onClick={this.listClik.bind(this,item.url)}>
                         <img src={item.image} />
                          <p>{item.iconTitle}</p>
                     </li>)
@@ -37,4 +40,4 @@ class list extends Component {
             })
     }
 }
-export default list
+export default withRouter(list) 
