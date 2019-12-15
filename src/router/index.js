@@ -13,16 +13,12 @@ import Trailer from "../pages/my/trailer"
 import TopList from "../pages/my/topList"
 import News from "../pages/my/news"
 import NewsInfo from "../pages/my/components/newsInfo"
-<<<<<<< HEAD
-import Xiangq from "../pages/shopping/components/list-xq"
-import Xiangx from "../pages/shopping/components/list.xx"
-=======
 import Xq from "../pages/home/xq"
 import xqa from "../pages/purchase/component/content"
 import WrappedNormalLoginForm from "../pages/login"
 import shopList from "../pages/shopList"
+import CommentInfo from "../pages/my/components/commentInfo"
 // import Content from "../pages/purchase/component/content"
->>>>>>> 9ab3014dc5a09afd4c7732c50a787f2a60436948
 export const maxRoutes = [
     {
         pathname:"/home",
@@ -58,31 +54,17 @@ export const maxRoutes = [
 
     },
     {
-<<<<<<< HEAD
-        pathname:"/xiangq",
-        component:Xiangq,
-=======
         pathname:"/login",
         component:WrappedNormalLoginForm,
->>>>>>> 9ab3014dc5a09afd4c7732c50a787f2a60436948
         display:false
 
     },
     {
-<<<<<<< HEAD
-        pathname:"/xiangx",
-        component:Xiangx,
-        display:false
-
-    },
-    
-=======
         pathname:"/contenta",
         component:xqa,
         display:false
 
     }, 
->>>>>>> 9ab3014dc5a09afd4c7732c50a787f2a60436948
 ]
 
 
@@ -138,6 +120,11 @@ export const infoRoutes = [
     {
         pathname:"/shoplist",
         component:shopList,
+       
+    },
+    {
+        pathname:"/commentInfo",
+        component:CommentInfo,
        
     }
   
