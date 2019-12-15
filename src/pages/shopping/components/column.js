@@ -20,7 +20,11 @@ export default class column extends Component {
                     </div>
                     <div className="column-box">
                         {this.state.c.map((c,index) => (
+<<<<<<< HEAD
                             <div className="box-box" key={index}>
+=======
+                            <div key={index} className="box-box">
+>>>>>>> 9ab3014dc5a09afd4c7732c50a787f2a60436948
                                 <img src={c.image} className="img-box"/>
                             </div>
                         ))}

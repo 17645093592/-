@@ -1,0 +1,20 @@
+.chead{
+    width: 100%;
+    background: #333;
+    height: 1.2rem;
+}
+.toleft{
+    height: 0.9rem;
+    padding: 0.3rem;
+    width: 1.2rem;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.file{
+    height: 0.9rem;
+    padding: 0.3rem;
+    width: 1.2rem;
+    text-align: center;
+    font-size: 0.6rem;
+    float: right;
+}

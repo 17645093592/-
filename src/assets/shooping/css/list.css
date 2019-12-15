@@ -7,18 +7,13 @@
 }
 .shoop-list ul {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     /* padding: .5rem 1rem; */
 }
 .shoop-list ul li{
     width: 25%;
-    height: 1.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    height: 100%;
+    float: left;
+    text-align: center;
 
     /* padding-right:.5rem; */
     /* text-align: center; */
@@ -26,7 +21,7 @@
 }
 .shoop-list ul li img{
     display: block;
-    width: 80%;
+    width: 100%;
     /* padding-right: .5rem; */
     /* text-align: center; */
 

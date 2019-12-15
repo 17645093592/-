@@ -42,7 +42,18 @@ module.exports = (app)=>{
        target:" https://ticket-api-m.mtime.cn",
        changeOrigin:true
    }))
-   
+   app.use(proxy("/utility",{
+    target:" https://comm-api-m.mtime.cn",
+    changeOrigin:true
+}))
+app.use(proxy("/cinema",{
+    target:"https://ticket-api-m.mtime.cn",
+    changeOrigin:true,
+}))
+app.use(proxy("/app",{
+    target:"http://rap2api.taobao.org/",
+    changeOrigin:true,
+}))
 }
 
 

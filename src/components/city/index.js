@@ -19,14 +19,17 @@ export default class City extends Component {
     seach(e){
         let box = this.state.box
         let list =[]
+        let aaa ="aaa"
         for(var i=0;i<box.length;i++){
             list.push(box[i].n)
             list = list.filter(function(t){
                 if(t.indexOf(e.target.value)>-1) {
-                  return  list.push(t)
+                    list.push(t)
                 }
             })
         }
+        
+        console.log(list)
        if(!e.target.value){
        this.setState({
            seach: this.state.seach.length=0
