@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./naveBar.css"
-import{NavLink} from "react-router-dom"
+import{NavLink,withRouter} from "react-router-dom"
 import {maxRoutes} from "../../router"
 const menus = maxRoutes.filter(item=>{
     return item.display === true
@@ -25,11 +25,14 @@ const menus = maxRoutes.filter(item=>{
                         }
                        
                     </div>
-                    <li className="icon"></li>
+                    <li className="icon" onClick={this.clickHand.bind(this)}></li>
                 </ul>
             </div>
         )
     }
-  
+    clickHand(){
+        console.log(this.props)
+        this.props.history.push("/login")
+    }
 }
-export default naveBar
+export default withRouter(naveBar) 

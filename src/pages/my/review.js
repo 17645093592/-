@@ -23,7 +23,7 @@ class Review extends Component {
         return (
             <Fragment>
                 <div className="picBox">
-                    <img src="https://img1.doubanio.com/view/thing_review/l/public/3564898.webp" />
+                    <img src="//imgproxy.mtime.cn/get.ashx?uri=http%3A%2F%2Fimg5.mtime.cn%2Fmt%2F2019%2F10%2F22%2F153005.80455148_1280X720X2.jpg&width=125&height=190&clipType=4" />
                     <span>
                         曾经的少年，如今的你！                    </span>
                 </div>

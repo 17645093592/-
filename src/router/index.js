@@ -13,9 +13,11 @@ import Trailer from "../pages/my/trailer"
 import TopList from "../pages/my/topList"
 import News from "../pages/my/news"
 import NewsInfo from "../pages/my/components/newsInfo"
-import CommentInfo from "../pages/my/components/commentInfo"
-
-
+import Xq from "../pages/home/xq"
+import xqa from "../pages/purchase/component/content"
+import WrappedNormalLoginForm from "../pages/login"
+import shopList from "../pages/shopList"
+// import Content from "../pages/purchase/component/content"
 export const maxRoutes = [
     {
         pathname:"/home",
@@ -49,7 +51,19 @@ export const maxRoutes = [
         component:Content,
         display:false
 
-    }
+    },
+    {
+        pathname:"/login",
+        component:WrappedNormalLoginForm,
+        display:false
+
+    },
+    {
+        pathname:"/contenta",
+        component:xqa,
+        display:false
+
+    }, 
 ]
 
 
@@ -67,6 +81,11 @@ export const maiRoutes = [
     {
         pathname:"/city",
         component:City,
+       
+    },
+    {
+        pathname:"/xq",
+        component:Xq,
        
     },
 ]
@@ -98,10 +117,11 @@ export const infoRoutes = [
         name:"新闻详情"
     },
     {
-        pathname:"/commentInfo",
-        component:CommentInfo,
-        name:"评论"
+        pathname:"/shoplist",
+        component:shopList,
+       
     }
+  
 ]
 
 

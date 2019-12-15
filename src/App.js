@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Header from "./components/header"
 import {Route,Redirect,withRouter} from "react-router-dom"
 import {maxRoutes,maiRoutes, myRoutes,infoRoutes} from "./router"
+
  class App extends Component {
   
     render() {
@@ -12,7 +13,7 @@ import {maxRoutes,maiRoutes, myRoutes,infoRoutes} from "./router"
                 <div className="rootTwo">
                 
                 {
-                    (history.location.pathname === "/home" ||history.location.pathname === "/shopping" || history.location.pathname === "/purchase" ||history.location.pathname === "/my" ||history.location.pathname === "/content") ?<Header></Header>:null 
+                    (history.location.pathname === "/home" ||history.location.pathname === "/shopping" || history.location.pathname === "/purchase" ||history.location.pathname === "/my" ||history.location.pathname === "/content"||history.location.pathname === "/my/news") ?<Header></Header>:null 
                 }
                 
                 
@@ -22,7 +23,7 @@ import {maxRoutes,maiRoutes, myRoutes,infoRoutes} from "./router"
                         })
                     }
 
-                    <Redirect to={maxRoutes[2].pathname} from="/" exact></Redirect>
+                    <Redirect to={maxRoutes[0].pathname} from="/" exact></Redirect>
 
                 </div>
                 {
@@ -41,6 +42,7 @@ import {maxRoutes,maiRoutes, myRoutes,infoRoutes} from "./router"
                     </>     
         )
     }
+   
 }
 
 export default withRouter(App)
