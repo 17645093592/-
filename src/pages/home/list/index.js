@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import "../../../pulblic/css/home/list/index.css"
 import axios from "axios"
-export default class List extends Component {
+import {connect} from "react-redux"
+import { stat } from 'fs'
+ class List extends Component {
     state={
         list:[]
     }
     render() {
-
+        // console.log(this.state.list)
         return (
             <div className="m_bg_gray">
                  <div className="mallshop">
@@ -28,7 +30,7 @@ export default class List extends Component {
                                         
                                  item.images[0].isVideo === true?
                                          (
-                                            <li key={index}>
+                                            <li className={item.relatedId} onClick={this.clickHandd.bind(this,item.relatedId)}  key={index}>
                                             <div>
                                                 <div className="todaypic_bigimg"><img className="m_img img_box" src={item.images[0].imgUrl} alt=""></img><i className="video_icon"></i></div>
                                                 <div className="todaytxt">
@@ -41,7 +43,7 @@ export default class List extends Component {
                                         )
                                         :
                                         (
-                                            <li key={item.title}>
+                                            <li className={item.relatedId} key={item.title} onClick={this.clickHandd.bind(this,item.relatedId)}>
                                                 <div className="table">
                                                     <div className="todaypic"><img className="m_img img_box" src={item.images[0].imgUrl} alt=""></img></div>
                                                     <div className="todaytxt td">
@@ -68,6 +70,9 @@ export default class List extends Component {
             </div>
         )
     }
+    clickHandd(id){
+       this.props.history.push({pathname:"/xq",state:id})
+    }
     componentWillMount(){
         axios.post("/article/originalInfoList.api")
         .then(err=>{
@@ -76,4 +81,8 @@ export default class List extends Component {
             })
         })
     }
+ 
 }
+
+
+export default connect()(List) 

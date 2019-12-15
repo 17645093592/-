@@ -13,7 +13,7 @@ export default class Seach extends Component {
         val:""
     }
     }
-    
+    //on
     changeHander(e){
         if (e.target.value) {
               this.getLeft(e.target.value)
@@ -30,6 +30,7 @@ export default class Seach extends Component {
                  <Xiazai/>
                  <div className="hea_search">
                      <Icon onClick={this.clickHandd.bind(this)} style={{lineHeight:".7rem",width:".5rem"}} type="left" /> 
+                
                      <Search
                      placeholder="input search text"
                      onSearch={value => console.log(value)}
@@ -73,6 +74,7 @@ export default class Seach extends Component {
         
         axios.get(`/ajax/search?kw=${val}&cityId=1&stype=-1`)
         .then(err=>{
+            console.log(err.data.movies.list)
             const movieList = err.data.movies.list.map(item=>{
                 item.img = item.img.replace(/\/w\.h\//,"/128.126/")
                 return item

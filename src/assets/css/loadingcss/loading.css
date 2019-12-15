@@ -1,0 +1,18 @@
+
+.loadingbox{
+
+  width: 100%;
+  height: 100%;
+}
+.loading{
+    display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+http://m.maoyan.com/ajax/detailmovie?movieId=1238837&op
+timus_uuid=277305901CD611EAB034DD5CA2D3808F724322E080E04F9CA6D06FAC9BE13B0F&optimus_risk_level=71&optimus_code=10 */
+/* 
+http://m.maoyan.com/ajax/movieOnInfoList?token=&optimus_uuid=277305901CD611EAB034DD5CA2D3808F72432
+2E080E04F9CA6D06FAC9BE13B0F&optimus_risk_level=71&optimus_code=10 */

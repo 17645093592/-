@@ -102,6 +102,7 @@ export default class xiangqing extends Component {
         )
     }
     getXiangqing(){
+        console.log(this.props)
         const xiangqing = JSON.parse (this.props.history.location.pathname.split("/")[2]) 
         const yue = this.props.history.location.pathname.split("/")[3]
         const ri = this.props.history.location.pathname.split("/")[4]

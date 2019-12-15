@@ -1,0 +1,83 @@
+.laber-box{
+    height: 100%;
+    width: 100%;
+    margin: .3rem 0;
+}
+.laber-title{
+    text-align: center;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.laber-title:after{
+    content: "";
+    display: block;
+    height: 1px;
+    background: #e9e9e9;
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 50%;
+    width: 60%;
+    z-index: 0;
+}
+.laber-title span{
+    padding: .1rem 0;
+    line-height: 1;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.laber-title span i{
+    font-size: 1.2em;
+    color: #999;
+    font-weight: normal;
+    background: #f6f6f6;
+    position: relative;
+    z-index: 1; 
+}
+.laber-list{
+    padding: .3rem 0;
+    box-sizing: border-box;
+}
+.laber-list ul{
+    overflow: hidden;
+    zoom: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.laber-list ul li{
+    width: 47%;
+    min-height: 5rem;
+    background-color: #fff;
+    margin:.1rem .1rem;
+}
+.list-top{
+    color: #fff;
+    width: .8rem;
+    height: 5%;
+}
+.list-con{
+    height: 70%
+}
+.list-con img{
+    height: 100%;
+    width: 100%
+}
+.list-foot{
+    height: 10%;
+    padding: .1rem .2rem;
+    font-size: .3rem;
+}
+.list-foot dt em{
+    color: #ff8600;
+    border: 1px solid #ff8600;
+    border-radius: .06rem;
+    line-height: 100%;
+}
+.list-foot dd{
+    color: #ff8600;
+    font-size: .3rem;
+}
